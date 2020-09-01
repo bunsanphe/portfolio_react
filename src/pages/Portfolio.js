@@ -1,8 +1,28 @@
 import React from "react";
-
+import { Container, Row, Col } from "../components/Grid";
+import Image from 'react-bootstrap/Image'
+import Gaea from "../images/Gaea_screenshot.png"
 function Portfolio(){
     return(
-        <h1>Test</h1>
+        <Container>
+            <Row>
+                <Col size="lg-4">
+                    <div className="content-box">
+                        <h1>Portfolio</h1>
+                        <div className="images">
+                            <Col size="lg-6">
+                                <div className="porttext">
+                                    <a href="https://saharanath.github.io/Project1/">
+                                        Gaea - Hiking Trail
+                                    </a>
+                                    <img src={Gaea} class="img-fluid" alt=" "></img>
+                                </div>
+                            </Col>
+                        </div>
+                    </div>
+                </Col>
+            </Row>
+        </Container>
     //     <div class="container-lg py-4">
     //      <div class="row">
     //         <div class="col-lg-9">
